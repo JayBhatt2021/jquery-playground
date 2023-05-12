@@ -35,13 +35,13 @@ nav a {
     padding-right: 0.3rem;
 }
 
-/* Removes the last nav anchor's "pipe" divider */
+/* Removes the last nav anchor element's "pipe" divider */
 nav a:last-child {
     border: 0;
 }
 
 /**
- * Div Container Style
+ * Div Container Styles
  */
 #container {
     margin: auto;
