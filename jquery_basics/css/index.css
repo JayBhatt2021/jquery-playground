@@ -1,0 +1,63 @@
+@charset utf-8;
+
+
+/**
+ * index.css
+ *
+ * This file contains the general styles for this project.
+ */
+
+/**
+ * Body Styles
+ */
+body {
+    background-color: whitesmoke;
+    font-family: arial, serif;
+    line-height: 1.5rem;
+}
+
+/**
+ * Header Component Styles
+ */
+header {
+    background: #333;
+    border-bottom: 0.3rem black solid;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav a {
+    border-right: 0.1rem white solid;
+    color: white;
+    display: inline-block;
+    padding-right: 0.3rem;
+}
+
+/* Removes the last nav anchor's "pipe" divider */
+nav a:last-child {
+    border: 0;
+}
+
+/**
+ * Div Container Style
+ */
+#container {
+    margin: auto;
+    padding: 0.6rem;
+    width: 90%;
+}
+
+/**
+ * Table Styles
+ */
+table, th, td {
+    border: 0.1rem black solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.3rem;
+    text-align: left;
+}

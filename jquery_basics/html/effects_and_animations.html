@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="jquery, basics, effects, animations"/>
+        <meta name="description"
+              content="This page showcases basic effects and animations."/>
+        <meta charset="UTF-8"/>
+        <title>jQuery Basics - Effects and Animations</title>
+        <link href="../css/index.css" rel="stylesheet" media="screen, print"/>
+        <link href="../css/effects_and_animations.css" rel="stylesheet" media="screen, print"/>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>jQuery Basics | Effects and Animations</h1>
+            <nav>
+                <a href="./selectors.html">Selectors</a>
+                <a href="./events.html">Events</a>
+                <a href="./dom_manipulation.html">DOM Manipulation</a>
+                <a href="./effects_and_animations.html">Effects and Animations</a>
+                <a href="./ajax/ajax.html">Ajax</a>
+            </nav>
+        </header>
+        <div id="container">
+            <!-- Fade and Slide Effects Section -->
+            <h1>Fade and Slide Effects</h1>
+            <div id="fade-and-slide-box">
+                <h2>Use effects on me!</h2>
+            </div>
+            <table>
+                <tr>
+                    <th>Fade Effects</th>
+                    <td>
+                        <button id="fade-out-button">Fade Out</button>
+                    </td>
+                    <td>
+                        <button id="fade-in-button" disabled>Box is visible!</button>
+                    </td>
+                    <td>
+                        <button id="fade-toggle-button">Fade Toggle</button>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Slide Effects</th>
+                    <td>
+                        <button id="slide-up-button">Slide Up</button>
+                    </td>
+                    <td>
+                        <button id="slide-down-button" disabled>Box is visible!</button>
+                    </td>
+                    <td>
+                        <button id="slide-toggle-button">Slide Toggle</button>
+                    </td>
+                    <td>
+                        <button id="stop-button">Stop</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+            <!-- Movement Animations Section -->
+            <h1>Movement Animations</h1>
+            <table>
+                <tr>
+                    <th>Movement Animations</th>
+                    <td>
+                        <button id="move-left-and-shrink-button">Move Left and Shrink</button>
+                    </td>
+                    <td>
+                        <button id="move-right-and-expand-button">Move Right and Expand</button>
+                    </td>
+                    <td>
+                        <button id="move-clockwise-button">Move Clockwise</button>
+                    </td>
+                </tr>
+            </table>
+            <div id="movement-box"></div>
+        </div>
+        <!-- JS Section -->
+        <script src="../vendor/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+        <script src="../js/effects_and_animations.js"></script>
+    </body>
+</html>

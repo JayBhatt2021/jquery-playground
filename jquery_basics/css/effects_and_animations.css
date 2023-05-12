@@ -1,0 +1,26 @@
+@charset utf-8;
+
+
+/**
+ * effects_and_animations.css
+ *
+ * This file contains the styles for effects_and_animations.html.
+ */
+
+#fade-and-slide-box {
+    background: #333;
+    color: white;
+    height: 4rem;
+    margin: 1.5rem 0;
+    padding: 2.5rem;
+    text-align: center;
+    width: 31rem;
+}
+
+#movement-box {
+    background: red;
+    height: 6.2rem;
+    margin-top: 1.5rem;
+    position: relative;
+    width: 6.2rem;
+}

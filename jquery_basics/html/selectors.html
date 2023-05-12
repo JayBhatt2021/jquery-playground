@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="jquery, basics, selector"/>
+        <meta name="description"
+              content="This page showcases basic jQuery selector operations."/>
+        <meta charset="UTF-8"/>
+        <title>jQuery Basics - Selectors</title>
+        <link href="../css/index.css" rel="stylesheet" media="screen, print"/>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>jQuery Basics | Selectors</h1>
+            <nav>
+                <a href="./selectors.html">Selectors</a>
+                <a href="./events.html">Events</a>
+                <a href="./dom_manipulation.html">DOM Manipulation</a>
+                <a href="./effects_and_animations.html">Effects and Animations</a>
+                <a href="./ajax/ajax.html">Ajax</a>
+            </nav>
+        </header>
+        <div id="container">
+            <!-- Heading1 Section -->
+            <h1 id="heading1">Heading One</h1>
+            <p id="paragraph1">
+                This word will turn red when you press the "Turn Paragraph Span Elements Red" button: <span>Hello</span>.
+            </p>
+            <h2>Nonfunctional Submit Button</h2>
+            <input type="submit" value="Submit"/>
+            <!-- Heading2 Section -->
+            <h1 class="heading2">Heading Two</h1>
+            <p class="paragraph2">
+                This word will turn red when you press the "Turn Paragraph Span Elements Red" button: <span>Hi</span>.
+            </p>
+            <h2>List</h2>
+            <ul id="list">
+                <li>Zeroth List Item</li>
+                <li>First List Item</li>
+                <li>Second List Item</li>
+                <li>Third List Item</li>
+                <li>Fourth List Item</li>
+                <li>Fifth List Item</li>
+                <li>Sixth List Item</li>
+                <li>Seventh List Item</li>
+            </ul>
+            <h2>Links</h2>
+            <a href="https://google.com">Google</a>
+            <a href="https://yahoo.com">Yahoo</a>
+            <!-- Button Section -->
+            <h1>Buttons</h1>
+            <table>
+                <tr>
+                    <th>Hide Buttons</th>
+                    <td>
+                        <input type="button" value="Hide h1 Elements" onclick="hideH1Elements()"/>
+                    </td>
+                    <td>
+                        <input type="button" value="Hide 'Heading One'" onclick="hideHeadingOne()"/>
+                    </td>
+                    <td>
+                        <input type="button" value="Hide 'Heading Two'" onclick="hideHeadingTwo()"/>
+                    </td>
+                    <td>
+                        <input type="button" value="Hide Submit Button" onclick="hideSubmitButton()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Hide All Elements (Refresh Page to Undo this Operation)"
+                               onclick="hideAllElements()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Text Color Buttons</th>
+                    <td>
+                        <input type="button"
+                               value="Turn Paragraph Span Elements Red"
+                               onclick="turnParagraphSpanElementsRed()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Turn First List Element Red"
+                               onclick="turnFirstListElementRed()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Turn Last List Element Green"
+                               onclick="turnLastListElementGreen()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Turn Anchor Elements Red"
+                               onclick="turnAnchorElementsRed()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Turn Yahoo Link Green"
+                               onclick="turnYahooLinkGreen()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Background Color Buttons</th>
+                    <td>
+                        <input type="button"
+                               value="Set the Background Color of Even List Elements to Yellow"
+                               onclick="setEvenListElementsBackgroundColor()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Set the Background Color of Odd List Elements to Gray"
+                               onclick="setOddListElementsBackgroundColor()"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>
+                        Remove Button
+                    </th>
+                    <td>
+                        <input type="button"
+                               value="Remove the Bullet Point of Every Third List Element"
+                               onclick="removeEveryThirdListElementBullet()"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- JS Section -->
+        <script src="../vendor/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+        <script src="../js/selectors.js"></script>
+    </body>
+</html>

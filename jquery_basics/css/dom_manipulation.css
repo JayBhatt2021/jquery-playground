@@ -1,0 +1,13 @@
+@charset utf-8;
+
+
+/**
+ * dom_manipulation.css
+ *
+ * This file contains the styles for dom_manipulation.html.
+ */
+
+.my-class {
+    background: black;
+    color: white;
+}

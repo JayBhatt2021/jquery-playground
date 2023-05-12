@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="jquery, basics, ajax"/>
+        <meta name="description"
+              content="This page showcases Ajax operations."/>
+        <meta charset="UTF-8"/>
+        <title>jQuery Basics - Ajax</title>
+        <link href="../../css/index.css" rel="stylesheet" media="screen, print"/>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>jQuery Basics | Ajax</h1>
+            <nav>
+                <a href="../selectors.html">Selectors</a>
+                <a href="../events.html">Events</a>
+                <a href="../dom_manipulation.html">DOM Manipulation</a>
+                <a href="../effects_and_animations.html">Effects and Animations</a>
+                <a href="./ajax.html">Ajax</a>
+            </nav>
+        </header>
+        <div id="container">
+            <!-- Loading test.html Section -->
+            <h1>Loading test.html</h1>
+            <input type="button"
+                   value="Load test.html"
+                   onclick="loadTestHTML()"/>
+            <div id="test"></div>
+            <hr/>
+            <!-- Getting Current Bitcoin Prices Section -->
+            <h1>Getting Current Bitcoin Prices</h1>
+            <input type="button"
+                   value="Get Current Bitcoin Prices"
+                   onclick="getBitcoinPricesJson()"/>
+            <p>One Bitcoin is worth...</p>
+            <ul id="current-bitcoin-prices"></ul>
+            <hr/>
+            <!-- Getting Cat Facts Section -->
+            <h1>Getting Cat Facts</h1>
+            <input type="button"
+                   value="Get Cat Facts"
+                   onclick="getCatFacts()"/>
+            <div id="cat-facts"></div>
+            <hr/>
+            <!-- Getting Memes Section -->
+            <h1>Getting Memes</h1>
+            <input type="button"
+                   value="Get 100 Meme Templates"
+                   onclick="getMemes()"/>
+            <div id="memes"></div>
+            <hr/>
+            <!-- Posting 101 -->
+            <h1>Posting 101</h1>
+            <form id="post-form" action="https://httpbin.org/post">
+                <label for="user-input">Enter something: </label>
+                <input type="text" id="user-input"/>
+                <input type="submit" value="Submit"/>
+            </form>
+        </div>
+        <!-- JS Section -->
+        <script src="../../vendor/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+        <script src="../../js/ajax.js"></script>
+    </body>
+</html>

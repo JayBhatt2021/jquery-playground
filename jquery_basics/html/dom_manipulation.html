@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="jquery, basics, DOM"/>
+        <meta name="description"
+              content="This page showcases basic DOM manipulation operations."/>
+        <meta charset="UTF-8"/>
+        <title>jQuery Basics - DOM Manipulation</title>
+        <link href="../css/index.css" rel="stylesheet" media="screen, print"/>
+        <link href="../css/dom_manipulation.css"
+              rel="stylesheet"
+              media="screen, print"/>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>jQuery Basics | DOM Manipulation</h1>
+            <nav>
+                <a href="./selectors.html">Selectors</a>
+                <a href="./events.html">Events</a>
+                <a href="./dom_manipulation.html">DOM Manipulation</a>
+                <a href="./effects_and_animations.html">Effects and Animations</a>
+                <a href="./ajax/ajax.html">Ajax</a>
+            </nav>
+        </header>
+        <div id="container">
+            <!-- Paragraph Manipulation Section -->
+            <h1>Paragraph Manipulation</h1>
+            <p class="dom-paragraph">
+                The Document Object Model (DOM) is the data representation of the objects that comprise
+                the structure and content of a document on the web.
+            </p>
+            <p class="html-dom-paragraph">
+                The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+            </p>
+            <hr/>
+            <!-- Div Manipulation Section -->
+            <h1>Div Manipulation</h1>
+            <div id="my-div"></div>
+            <hr/>
+            <!-- List Manipulation Section -->
+            <h1>List Manipulation</h1>
+            <h2>Regular List</h2>
+            <ul id="regular-list">
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+                <li>Fourth Item</li>
+            </ul>
+            <label for="new-list-element-field">New List Element:</label>
+            <input type="text"
+                   id="new-list-element-field"
+                   placeholder="Enter item, and press Enter."/>
+            <h2>User List</h2>
+            <ul id="user-list">
+            </ul>
+            <!-- Anchor Element Manipulation Section -->
+            <h1>Anchor Element Manipulation</h1>
+            <a id="facebook-link" href="https://facebook.com">Facebook</a>
+            <!-- Button Section -->
+            <h1>Buttons</h1>
+            <table>
+                <tr>
+                    <th>Paragraph Manipulation Buttons</th>
+                    <td>
+                        <input type="button"
+                               value="Set 1st Paragraph Text & Background Color"
+                               onclick="setDomParagraphColor()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Add 'my-class' to 2nd Paragraph"
+                               onclick="addHtmlDomParagraphClass()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Remove 'my-class' from 2nd Paragraph"
+                               onclick="removeHtmlDomParagraphClass()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Toggle 'my-class' in 2nd Paragraph"
+                               onclick="toggleHtmlDomParagraphClass()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Wrap each Paragraph with H1 Tags"
+                               onclick="wrapEachParagraphWithAnH1Element()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Wrap all Paragraphs with H1 Tags"
+                               onclick="wrapAllParagraphsWithAnH1Element()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Append 1st paragraph to 2nd paragraph"
+                               onclick="appendDomToHtmlDomParagraph()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Prepend 1st paragraph to 2nd paragraph"
+                               onclick="prependDomToHtmlDomParagraph()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Div Manipulation Buttons</th>
+                    <td>
+                        <input type="button"
+                               value="Set 'my-div' text"
+                               onclick="setMyDivText()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Set 'my-div' HTML"
+                               onclick="setMyDivHtml()"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>
+                        List Manipulation Buttons
+                    </th>
+                    <td>
+                        <input type="button"
+                               value="Append Preset Text to Regular List"
+                               onclick="appendToRegularList()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Prepend Preset Text to Regular List"
+                               onclick="prependToRegularList()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Add Preset Paragraph before Regular List"
+                               onclick="addParagraphBeforeRegularList()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Add Preset Paragraph after Regular List"
+                               onclick="addParagraphAfterRegularList()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Clear Regular List"
+                               onclick="clearRegularList()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Detach Regular List from DOM"
+                               onclick="detachRegularList()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Print Regular List Elements to Console"
+                               onclick="printRegularListElements()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Populate User List"
+                               onclick="populateUserList()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Anchor Element Manipulation Buttons
+                    </th>
+                    <td>
+                        <input type="button"
+                               value="Allow Facebook Link to Open in New Tab"
+                               onclick="allowFacebookToOpenInNewTab()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Prevent Facebook Link to Open in New Tab"
+                               onclick="preventFacebookToOpenInNewTab()"/>
+                    </td>
+                    <td>
+                        <input type="button"
+                               value="Display Facebook Link URL"
+                               onclick="displayFacebookLinkHref()"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- JS Section -->
+        <script src="../vendor/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+        <script src="../js/dom_manipulation.js"></script>
+    </body>
+</html>

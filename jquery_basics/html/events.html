@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="jquery, basics, event"/>
+        <meta name="description"
+              content="This page showcases basic jQuery event operations."/>
+        <meta charset="UTF-8"/>
+        <title>jQuery Basics - Events</title>
+        <link href="../css/index.css" rel="stylesheet" media="screen, print"/>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>jQuery Basics | Events</h1>
+            <nav>
+                <a href="./selectors.html">Selectors</a>
+                <a href="./events.html">Events</a>
+                <a href="./dom_manipulation.html">DOM Manipulation</a>
+                <a href="./effects_and_animations.html">Effects and Animations</a>
+                <a href="./ajax/ajax.html">Ajax</a>
+            </nav>
+        </header>
+        <div id="container">
+            <!-- Mouse Events Section -->
+            <h1>Mouse Events</h1>
+            <p class="mouse-events-paragraph">This text is affected by the below "Mouse Event Buttons".</p>
+            <table>
+                <tr>
+                    <th>Mouse Event Buttons</th>
+                    <td>
+                        <button id="hide-text-button">Hide Text</button>
+                    </td>
+                    <td>
+                        <button id="show-text-button">Show Text</button>
+                    </td>
+                    <td>
+                        <button id="double-click-toggle-button">Toggle Text (Double Click)</button>
+                    </td>
+                    <td>
+                        <button id="mouse-up-down-toggle-button">Toggle Text (Mouse Up and Down)</button>
+                    </td>
+                    <td>
+                        <button id="mouse-move-toggle-button">Toggle Text (Mouse Move)</button>
+                    </td>
+                    <td>
+                        <button id="properties-button" class="properties-class">Show This Button's Properties</button>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <!-- Current Mouse Coordinates Section -->
+            <hr/>
+            <h1>Current Mouse Coordinates</h1>
+            <h2 id="coordinates"></h2>
+            <hr/>
+            <!-- Form Events Section -->
+            <h1>Form Events</h1>
+            <form id="form">
+                <label for="name">Name</label>
+                <br/>
+                <input type="text" id="name" name="name"/>
+                <br/>
+                <label for="email">Email</label>
+                <br/>
+                <input type="text" id="email" name="email"/>
+                <br/>
+                <label for="gender">Gender</label>
+                <br/>
+                <select id="gender" name="gender">
+                    <option value="male">
+                        Male
+                    </option>
+                    <option value="female">
+                        Female
+                    </option>
+                    <option value="other">
+                        Other
+                    </option>
+                </select>
+                <input type="submit" value="Submit"/>
+            </form>
+        </div>
+        <!-- JS Section -->
+        <script src="../vendor/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+        <script src="../js/events.js"></script>
+    </body>
+</html>
