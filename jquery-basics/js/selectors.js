@@ -5,35 +5,35 @@
  */
 
 /**
- * Hides the h1 elements of the current page
+ * Hides all h1 elements
  */
 const hideH1Elements = () => {
   $("h1").hide();
 };
 
 /**
- * Hides the h1 elements with the "heading1" id of the current page
+ * Hides the "#heading1" h1 elements
  */
 const hideHeadingOne = () => {
   $("h1#heading1").hide();
 };
 
 /**
- * Hides the elements with the "heading2" class of the current page
+ * Hides the ".heading2" elements
  */
 const hideHeadingTwo = () => {
   $(".heading2").hide();
 };
 
 /**
- * Hides the elements with the "submit" type of the current page
+ * Hides the ":submit" elements
  */
 const hideSubmitButton = () => {
   $(":submit").hide();
 };
 
 /**
- * Hides all elements of the current page
+ * Hides all elements
  */
 const hideAllElements = () => {
   $("*").hide();
@@ -47,55 +47,54 @@ const turnParagraphSpanElementsRed = () => {
 };
 
 /**
- * Turns the text color of the first list element within an unordered list
- * of class "list" red
+ * Turns the text color of the first list element in the "#list" unordered list
+ * red
  */
 const turnFirstListElementRed = () => {
   $("ul#list li:first").css("color", "red");
 };
 
 /**
- * Turns the text color of the last list element within an unordered list
- * of class "list" green
+ * Turns the text color of the last list element in the "#list" unordered list
+ * green
  */
 const turnLastListElementGreen = () => {
   $("ul#list li:last").css("color", "green");
 };
 
 /**
- * Turns the text color of all elements with the "href" attribute red
+ * Turns the text color of "[href]" elements red
  */
 const turnAnchorElementsRed = () => {
   $("[href]").css("color", "red");
 };
 
 /**
- * Turns the text color of anchor elements with the
- * "[href='https://yahoo.com']" attribute green
+ * Turns the text color of "[href='https://yahoo.com']" anchor elements green
  */
 const turnYahooLinkGreen = () => {
   $("a[href='https://yahoo.com']").css("color", "green");
 };
 
 /**
- * Sets the background color of even list elements (0-indexed) within an
- * unordered list of class "list" yellow
+ * Sets the background color of even list elements (0-indexed) in the "#list"
+ * unordered list yellow
  */
 const setEvenListElementsBackgroundColor = () => {
   $("ul#list li:even").css("background-color", "yellow");
 };
 
 /**
- * Sets the background color of odd list elements (0-indexed) within an
- * unordered list of class "list" gray
+ * Sets the background color of odd list elements (0-indexed) in the "#list"
+ * unordered list gray
  */
 const setOddListElementsBackgroundColor = () => {
   $("ul#list li:odd").css("background-color", "#ccc");
 };
 
 /**
- * Removes the bullet point of every third list element within an unordered
- * list of class "list"
+ * Removes the bullet point of every third list element in the "#list"
+ * unordered list
  */
 const removeEveryThirdListElementBullet = () => {
   $("ul#list li:nth-child(3n)").css("list-style", "none");
