@@ -11,7 +11,7 @@ $(document).ready(() => {
 });
 
 /**
- * Loads the contents of test.html to a div element with the "test" ID
+ * Loads the contents of test.html to the "#test" (ID) div element
  */
 const loadTestHTML = () => {
   $("#test").load("test.html", (_, textStatus, xhr) => {
@@ -24,8 +24,8 @@ const loadTestHTML = () => {
 };
 
 /**
- * Gets the current Bitcoin prices and stores them in the unordered list with
- * the "current-bitcoin-prices" ID
+ * Gets the current Bitcoin prices and stores them in the
+ * "#current-bitcoin-prices" (ID) unordered list
  */
 const getBitcoinPricesJson = () => {
   $.getJSON(
@@ -43,8 +43,7 @@ const getBitcoinPricesJson = () => {
 };
 
 /**
- * Gets random cat facts and stores them in the div element with the
- * "cat-facts" ID
+ * Gets random cat facts and stores them in the "#cat-facts" (ID) div element
  */
 const getCatFacts = () => {
   $.get("https://cat-fact.herokuapp.com/facts", (catData) => {
@@ -55,7 +54,7 @@ const getCatFacts = () => {
 };
 
 /**
- * Gets random memes and stores them in the div element with the "memes" ID
+ * Gets random memes and stores them in the "#memes" (ID) div element
  */
 const getMemes = () => {
   $.ajax({

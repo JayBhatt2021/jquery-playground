@@ -11,69 +11,68 @@ $(document).ready(() => {
 });
 
 /**
- * Sets the text and background color of the paragraph element with the
- * "dom-paragraph" class
+ * Sets the text and background color of the ".dom-paragraph" (class) paragraph
+ * element
  */
 const setDomParagraphColor = () => {
   $("p.dom-paragraph").css({ color: "red", background: "#ccc" });
 };
 
 /**
- * Adds the "my-class" class to the paragraph element with the
- * "html-dom-paragraph" class
+ * Adds the "my-class" class to the ".html-dom-paragraph" (class) paragraph
  */
 const addHtmlDomParagraphClass = () => {
   $("p.html-dom-paragraph").addClass("my-class");
 };
 
 /**
- * Removes the "my-class" class from the paragraph element with the
- * "html-dom-paragraph" class
+ * Removes the "my-class" class from the ".html-dom-paragraph" (class)
+ * paragraph
  */
 const removeHtmlDomParagraphClass = () => {
   $("p.html-dom-paragraph").removeClass("my-class");
 };
 
 /**
- * Toggles the inclusion of "my-class" class in the paragraph element with the
- * "html-dom-paragraph" class
+ * Toggles the inclusion of the "my-class" class in the ".html-dom-paragraph"
+ * (class) paragraph
  */
 const toggleHtmlDomParagraphClass = () => {
   $("p.html-dom-paragraph").toggleClass("my-class");
 };
 
 /**
- * Wraps each paragraph element in the current page with an h1 element
+ * Wraps EACH paragraph element with an h1 element
  */
 const wrapEachParagraphWithAnH1Element = () => {
   $("p").wrap("<h1>");
 };
 
 /**
- * Wraps all paragraph elements in the current page with an h1 element
+ * Wraps ALL paragraph elements with an h1 element
  */
 const wrapAllParagraphsWithAnH1Element = () => {
   $("p").wrapAll("<h1>");
 };
 
 /**
- * Appends the paragraph element with the "dom-paragraph" class to the
- * paragraph element with the "html-dom-paragraph" class
+ * Appends the ".dom-paragraph" (class) paragraph element to the
+ * ".html-dom-paragraph" (class) paragraph element
  */
 const appendDomToHtmlDomParagraph = () => {
   $(".dom-paragraph").appendTo(".html-dom-paragraph");
 };
 
 /**
- * Prepends the paragraph element with the "dom-paragraph" class to the
- * paragraph element with the "html-dom-paragraph" class
+ * Prepends the ".dom-paragraph" (class) paragraph element to the
+ * ".html-dom-paragraph" (class) paragraph element
  */
 const prependDomToHtmlDomParagraph = () => {
   $(".dom-paragraph").prependTo(".html-dom-paragraph");
 };
 
 /**
- * Sets the text of the div element with the "my-div" class
+ * Sets the text of the "#my-div" (ID) div element
  */
 const setMyDivText = () => {
   const myDiv = $("#my-div");
@@ -82,7 +81,7 @@ const setMyDivText = () => {
 };
 
 /**
- * Sets the HTML of the div element with the "my-div" class
+ * Sets the HTML of the "#my-div" (ID) div element
  */
 const setMyDivHtml = () => {
   const myDiv = $("#my-div");
@@ -91,56 +90,53 @@ const setMyDivHtml = () => {
 };
 
 /**
- * Appends a preset list element to the unordered list with the "regular-list"
- * ID
+ * Appends a preset list element to the "#regular-list" (ID) unordered list
  */
 const appendToRegularList = () => {
   $("ul#regular-list").append("<li>Appended List Item</li>");
 };
 
 /**
- * Prepends a preset list element to the unordered list with the "regular-list"
- * ID
+ * Prepends a preset list element to the "#regular-list" (ID) unordered list
  */
 const prependToRegularList = () => {
   $("ul#regular-list").prepend("<li>Prepended List Item</li>");
 };
 
 /**
- * Adds a preset paragraph element before the unordered list with the
- * "regular-list" ID
+ * Adds a preset paragraph element BEFORE the "#regular-list" (ID) unordered
+ * list
  */
 const addParagraphBeforeRegularList = () => {
   $("ul#regular-list").before("<p>Before the Regular List</p>");
 };
 
 /**
- * Adds a preset paragraph element after the unordered list with the
- * "regular-list" ID
+ * Adds a preset paragraph element AFTER the "#regular-list" (ID) unordered
+ * list
  */
 const addParagraphAfterRegularList = () => {
   $("ul#regular-list").after("<p>After the Regular List</p>");
 };
 
 /**
- * Empties the unordered list with the "regular-list" ID of list elements
+ * Empties the "#regular-list" (ID) unordered list of list elements
  */
 const clearRegularList = () => {
   $("ul#regular-list").empty();
 };
 
 /**
- * Detaches the unordered list with the "regular-list" ID from the HTML DOM
- * entirely
+ * Detaches the "#regular-list" (ID) unordered list from the HTML DOM entirely
  */
 const detachRegularList = () => {
   $("ul#regular-list").detach();
 };
 
 /**
- * Appends the text inputted in the input element with the
- * "new-list-element-field" ID as a list element to the unordered list with the
- * "regular-list" ID after the Enter button is pressed
+ * Appends the text inputted in the "#new-list-element-field" (ID) input
+ * element as a list element to "#regular-list" (ID) unordered list after the
+ * Enter button is pressed
  */
 const appendNewListElementToRegularList = () => {
   $("#new-list-element-field").on("keyup", (e) => {
@@ -152,8 +148,8 @@ const appendNewListElementToRegularList = () => {
 };
 
 /**
- * Prints the value of each list element of the unordered list with the
- * "regular-list" ID to the console
+ * Prints the value of each list element of the "#regular-list" (ID) unordered
+ * list to the console
  */
 const printRegularListElements = () => {
   const regularListArray = $("ul#regular-list li").toArray();
@@ -163,7 +159,7 @@ const printRegularListElements = () => {
 };
 
 /**
- * Populates the unordered list with the "user-list" ID with preset users
+ * Populates the "#user-list" (ID) unordered list with preset users
  */
 const populateUserList = () => {
   const userArray = ["Jay", "Allison", "Bob", "Sam"];
@@ -187,8 +183,8 @@ const preventFacebookToOpenInNewTab = () => {
 };
 
 /**
- * Alerts the user of the href value of the anchor element with the
- * "facebook-link" ID
+ * Alerts the user of the href value of the "#facebook-link" (ID) anchor
+ * element
  */
 const displayFacebookLinkHref = () => {
   alert($("a#facebook-link").attr("href"));

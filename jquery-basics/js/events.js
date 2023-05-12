@@ -24,8 +24,8 @@ $(document).ready(() => {
 });
 
 /**
- * Hides the paragraph with the "mouse-events-paragraph" class when the "Hide
- * Text" button is clicked
+ * Hides the ".mouse-events-paragraph" (class) paragraph when the "Hide Text"
+ * button is clicked
  */
 const hideText = () => {
   $("#hide-text-button").on("click", () => {
@@ -35,8 +35,8 @@ const hideText = () => {
 };
 
 /**
- * Shows the paragraph with the "mouse-events-paragraph" class when the "Show
- * Text" button is clicked
+ * Shows the ".mouse-events-paragraph" (class) paragraph when the "Show Text"
+ * button is clicked
  */
 const showText = () => {
   $("#show-text-button").on("click", () => {
@@ -46,8 +46,8 @@ const showText = () => {
 };
 
 /**
- * Toggles the visibility of the paragraph with the "mouse-events-paragraph"
- * class when the "Toggle Text (Double Click)" button is double-clicked
+ * Toggles the visibility of the ".mouse-events-paragraph" (class) paragraph
+ * when the "Toggle Text (Double Click)" button is double-clicked
  */
 const doubleClickToggle = () => {
   $("#double-click-toggle-button").on("dblclick", () => {
@@ -56,8 +56,8 @@ const doubleClickToggle = () => {
 };
 
 /**
- * Toggles the visibility of the paragraph with the "mouse-events-paragraph"
- * class when the "Toggle Text (Mouse Up and Down)" button is clicked
+ * Toggles the visibility of the ".mouse-events-paragraph" (class) paragraph
+ * when the "Toggle Text (Mouse Up and Down)" button is clicked
  */
 const mouseUpDownToggle = () => {
   $("#mouse-up-down-toggle-button").on("mouseup", () => {
@@ -68,8 +68,8 @@ const mouseUpDownToggle = () => {
 };
 
 /**
- * Toggles the visibility of the paragraph with the "mouse-events-paragraph"
- * class when the "Toggle Text (Mouse Move)" button is hovered over
+ * Toggles the visibility of the ".mouse-events-paragraph" (class) paragraph
+ * when the "Toggle Text (Mouse Move)" button is hovered over
  */
 const mouseMoveToggle = () => {
   $("#mouse-move-toggle-button").on("mousemove", () => {
@@ -92,8 +92,8 @@ const showProperties = () => {
 };
 
 /**
- * Displays the current screen coordinate values of the mouse icon in the h2
- * element with the "coordinates" ID
+ * Displays the current screen coordinate values of the mouse icon in the
+ * "coordinates" (ID) h2 element
  */
 const trackMouseCoordinates = () => {
   $(document).on("mousemove", (e) => {
@@ -118,8 +118,8 @@ const handleInputEvents = () => {
 };
 
 /**
- * Alerts the user of the dropdown value he/she selected once the select
- * element with the "gender" ID detects a change
+ * Alerts the user of the dropdown value he/she selected once the "gender" (ID)
+ * select element detects a change
  */
 const handleSelectChange = () => {
   $("select#gender").on("change", (e) => {
@@ -129,7 +129,7 @@ const handleSelectChange = () => {
 
 /**
  * Submits the form without refreshing the page and alerts the user of the
- * values he/she typed in the "name" and "email" input elements
+ * values he/she typed in the "#name" and "#email" (IDs) input elements
  */
 const handleFormSubmit = () => {
   $("#form").on("submit", (e) => {

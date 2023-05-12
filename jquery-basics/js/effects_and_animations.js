@@ -24,7 +24,7 @@ $(document).ready(() => {
 });
 
 /**
- * Fades out the div element with the "fade-and-slide-box" ID
+ * Fades out the "#fade-and-slide-box" (ID) div element
  */
 const fadeOut = () => {
   $("#fade-out-button").on("click", () => {
@@ -36,7 +36,7 @@ const fadeOut = () => {
 };
 
 /**
- * Fades in the div element with the "fade-and-slide-box" ID
+ * Fades in the "#fade-and-slide-box" (ID) div element
  */
 const fadeIn = () => {
   $("#fade-in-button").on("click", () => {
@@ -48,7 +48,7 @@ const fadeIn = () => {
 };
 
 /**
- * Toggles the fade effect for the div element with the "fade-and-slide-box" ID
+ * Toggles the fade effect for the "#fade-and-slide-box" (ID) div element
  */
 const fadeToggle = () => {
   $("#fade-toggle-button").on("click", () => {
@@ -65,7 +65,7 @@ const fadeToggle = () => {
 };
 
 /**
- * Slides up the div element with the "fade-and-slide-box" ID
+ * Slides the "#fade-and-slide-box" (ID) div element up
  */
 const slideUp = () => {
   $("#slide-up-button").on("click", () => {
@@ -77,7 +77,7 @@ const slideUp = () => {
 };
 
 /**
- * Slides down the div element with the "fade-and-slide-box" ID
+ * Slides the "#fade-and-slide-box" (ID) div element down
  */
 const slideDown = () => {
   $("#slide-down-button").on("click", () => {
@@ -89,8 +89,7 @@ const slideDown = () => {
 };
 
 /**
- * Toggles the slide effect for the div element with the "fade-and-slide-box"
- * ID
+ * Toggles the slide effect for the "#fade-and-slide-box" (ID) div element
  */
 const slideToggle = () => {
   $("#slide-toggle-button").on("click", () => {
@@ -107,7 +106,7 @@ const slideToggle = () => {
 };
 
 /**
- * Stops the fade/slide effect of div element with the "fade-and-slide-box" ID
+ * Stops the fade/slide effect of the "#fade-and-slide-box" (ID) div element
  */
 const stopEffect = () => {
   $("#stop-button").on("click", () => {
@@ -116,7 +115,7 @@ const stopEffect = () => {
 };
 
 /**
- * Moves the div element with the "movement-box" ID to the left and shrinks it
+ * Moves the "#movement-box" (ID) div element to the left and shrinks it
  */
 const moveLeftAndShrink = () => {
   $("#move-left-and-shrink-button").on("click", () => {
@@ -130,7 +129,7 @@ const moveLeftAndShrink = () => {
 };
 
 /**
- * Moves the div element with the "movement-box" ID to the right and expands it
+ * Moves the "#movement-box" (ID) div element to the right and expands it
  */
 const moveRightAndExpand = () => {
   $("#move-right-and-expand-button").on("click", () => {
@@ -144,7 +143,7 @@ const moveRightAndExpand = () => {
 };
 
 /**
- * Moves the div element with the "movement-box" ID clockwise
+ * Moves the "#movement-box" (ID) div element clockwise
  */
 const moveClockwise = () => {
   $("#move-clockwise-button").on("click", () => {
@@ -167,8 +166,7 @@ const moveClockwise = () => {
 };
 
 /**
- * Enables the button elements with the "fade-out-button" and "slide-up-button"
- * IDs
+ * Enables the "#fade-out-button" and "#slide-up-button" (IDs) button elements
  */
 const enableFadeOutAndSlideUpButtons = () => {
   $("#fade-out-button").removeAttr("disabled").text("Fade Out");
@@ -176,8 +174,7 @@ const enableFadeOutAndSlideUpButtons = () => {
 };
 
 /**
- * Disables the button elements with the "fade-out-button" and
- * "slide-up-button" IDs
+ * Disables the "#fade-out-button" and "#slide-up-button" (IDs) button elements
  */
 const disableFadeOutAndSlideUpButtons = () => {
   $("#fade-out-button").attr("disabled", "disabled").text("Box is invisible!");
@@ -185,8 +182,7 @@ const disableFadeOutAndSlideUpButtons = () => {
 };
 
 /**
- * Enables the button elements with the "fade-in-button" and
- * "slide-down-button" IDs
+ * Enables the "#fade-in-button" and "#slide-down-button" (IDs) button elements
  */
 const enableFadeInAndSlideDownButtons = () => {
   $("#fade-in-button").removeAttr("disabled").text("Fade In");
@@ -194,8 +190,8 @@ const enableFadeInAndSlideDownButtons = () => {
 };
 
 /**
- * Disables the button elements with the "fade-in-button" and
- * "slide-down-button" IDs
+ * Disables the "#fade-in-button" and "#slide-down-button" (IDs) button
+ * elements
  */
 const disableFadeInAndSlideDownButtons = () => {
   $("#fade-in-button").attr("disabled", "disabled").text("Box is visible!");
