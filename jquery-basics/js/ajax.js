@@ -77,7 +77,7 @@ const getMemes = () => {
  * Sends the user input as a post request and alerts the user of its response
  */
 const postUserInput = () => {
-  $("#post-form").submit((e) => {
+  $("#post-form").on("submit", (e) => {
     e.preventDefault();
     const userInput = $("#user-input").val();
     const postUrl = $(this).attr("action");
