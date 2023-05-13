@@ -10,12 +10,12 @@ $(document).ready(() => {
   fadeOut();
   fadeIn();
   fadeToggle();
+  stopEffect();
 
   // Slide Effects
   slideUp();
   slideDown();
   slideToggle();
-  stopEffect();
 
   // Movement Animations
   moveLeftAndShrink();
@@ -109,7 +109,7 @@ const slideToggle = () => {
  * Stops the fade/slide effect of the "#fade-and-slide-box" (ID) div element
  */
 const stopEffect = () => {
-  $("#stop-button").on("click", () => {
+  $(".stop-button").on("click", () => {
     $("#fade-and-slide-box").stop();
   });
 };
