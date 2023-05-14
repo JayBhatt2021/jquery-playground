@@ -1,7 +1,7 @@
 # jQuery Playground
 
 jQuery Playground (referred to as "jQuery Basics" in the project) is a basic web application that allows users to
-interact with HTML elements using basic jQuery operations. This web application is based on Brad
+interact with HTML elements using fundamental jQuery operations. This web application is based on Brad
 Traversy's [jQuery Crash Course](https://github.com/bradtraversy/jquery_crash_course). However, the code in this
 repository differs greatly from the original as it utilizes data abstraction, allows for seamless navigation among
 different jQuery topics, includes thorough documentation, etc.
