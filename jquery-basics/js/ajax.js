@@ -80,7 +80,7 @@ const postUserInput = () => {
   $("#post-form").on("submit", (e) => {
     e.preventDefault();
     const userInput = $("#user-input").val();
-    const postUrl = $(this).attr("action");
+    const postUrl = "https://httpbin.org/post";
 
     $.post(postUrl, { userInput: userInput }).done((responseText) =>
       alert(`Post request was successful. Response:\n${responseText}.`)
